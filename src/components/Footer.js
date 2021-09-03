@@ -3,14 +3,21 @@ import './Footer.css';
 
 import GithubIcon from '../images/GithubIcon';
 import LinkedinIcon from '../images/LinkedinIcon';
+import Logo from '../images/Logo';
+
 
 function Footer() {
     return (
         <footer className="footer">
             <div className="footer__info">
                 <div className="footer__info--container">
-                    <p className="footer__info--title">Planet express</p>
+                    <div className="footer__info--container-logo">
+                        <Logo className="footer__logo" />
+                        <p className="footer__info--title">Planet express</p>
+                    </div>
                     <p className="footer__info--text">Planet Express es una empresa dedicada al envio interestelar</p>
+
+
                 </div>
 
                 <ul className="footer__info--nav">
