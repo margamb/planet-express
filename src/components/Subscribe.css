@@ -1,10 +1,108 @@
 .subscribe {
-    background-color: red;
     width: 100%;
     max-width: 800px;
     margin-inline: auto;
     padding: 20px 30px 20px 30px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.subcribe__container {}
+.subscribe__img {
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.subscribe__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--gray-900);
+    margin-bottom: 10px;
+}
+
+.subscribe__text {
+    max-width: 500px;
+    margin-inline: auto;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--gray-900);
+    line-height: 1.2;
+}
+
+.subscribe__form {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.subscribe__form--input {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 40px;
+    padding: 10px 16px;
+    color: var(--gray-900);
+    background-color: var(--gray-50);
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.subscribe__form--submit {
+    width: 25%;
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--secondary-400);
+    color: var(--white);
+    border-radius: 8px;
+    appearance: none;
+    position: relative;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.subscribe_not {
+    display: none;
+}
+
+.subscribe__exit {
+    background-color: var( --primary-400);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.subscribe__exit--text {
+    font-size: 16px;
+    color: var(--gray-900);
+    line-height: 1.2;
+    width: 95%;
+}
+
+.subscribe__exit--close {
+    border-radius: 100%;
+    padding: 7px 10px 7px 10px;
+    background-color: var(--primary-500);
+    color: var(--white);
+    font-weight: 700;
+    position: relative;
+    top: -18px;
+    right: -20px;
+    cursor: pointer;
+}
