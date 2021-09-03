@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Subscribe.css';
 
 import companyLogo from '../images/bender_newsletter.jpg';
+import Bender from './Bender'
 
 function Subscribe() {
     const [email, setEmail] = useState('');
@@ -13,7 +14,8 @@ function Subscribe() {
 
     return (
         <section className="subscribe">
-            <img className="subscribe__img" src={companyLogo} alt="planet express logo" />
+            <Bender />
+            {/* <img className="subscribe__img" src={companyLogo} alt="planet express logo" /> */}
             <h1 className="subscribe__title">Subscribete</h1>
             <p className="subscribe__text">Subscribete a nuestra newsletter para tener informacion de nuestros envios y viajes interestelares.</p>
             <form className="subscribe__form" onSubmit={emailAddress}>

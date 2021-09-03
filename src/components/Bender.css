@@ -1,0 +1,200 @@
+.bender__container {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: var(--secondary-400);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.antena__ball {
+    width: 12px;
+    height: 12px;
+    background-color: var(--gray-400);
+    border-radius: 100px;
+    position: relative;
+    top: -19px;
+    left: 71px;
+}
+
+.antena__ball-1 {
+    width: 27px;
+    height: 27px;
+    background-color: var(--gray-400);
+    border-radius: 100px;
+    position: relative;
+    top: -37px;
+    left: 63px;
+}
+
+.antena__stick {
+    width: 8px;
+    height: 30px;
+    background-color: var(--gray-400);
+    position: relative;
+    top: -21px;
+    left: 73px;
+}
+
+.bender__face {
+    width: 70px;
+    height: 120px;
+    border-radius: 38px 38px 0px 0px;
+    background-color: var(--gray-400);
+    position: relative;
+    left: 42px;
+    top: -55px;
+}
+
+.bender__light {
+    width: 50px;
+    height: 120px;
+    border-radius: 38px 38px 0px 0px;
+    background-color: var(--gray-200);
+    position: relative;
+    left: 10px;
+}
+
+.bender__light--second {
+    width: 6px;
+    height: 50px;
+    border-radius: 38px 38px 0px 0px;
+    background-color: var(--white);
+    position: relative;
+    left: 3px;
+    opacity: 0.3;
+    top: 22px;
+}
+
+.bender__eyes--container {
+    width: 100px;
+    height: 35px;
+    background-color: var(--gray-400);
+    position: relative;
+    top: -75px;
+    left: -15px;
+    border-radius: 20px;
+}
+
+.bender__eyes--container-black {
+    width: 90px;
+    height: 29px;
+    background-color: var(--black);
+    border-radius: 20px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    overflow: hidden;
+}
+
+.eyes__left {
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    top: 2px;
+    left: 13px;
+}
+
+.eyes__right {
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    top: -29px;
+    left: 48px;
+}
+
+.eyes__pupil {
+    width: 7px;
+    height: 7px;
+    background-color: var(--black);
+    border-radius: 100px;
+    top: 11px;
+    left: 11px;
+    position: relative;
+}
+
+.mouth {
+    width: 55px;
+    height: 25px;
+    background-color: var(--white);
+    position: relative;
+    top: -68px;
+    left: 7px;
+    border-radius: 13px;
+    overflow: hidden;
+    border: 2px solid var(--black);
+}
+
+.lips {
+    width: 55px;
+    height: 25px;
+    background-color: var(--gray-400);
+    position: relative;
+    top: -180px;
+    left: 0px;
+}
+
+.horizontal__teeth-1 {
+    width: 70px;
+    height: 2px;
+    background-color: var(--black);
+    position: relative;
+    top: 7px;
+}
+
+.horizontal__teeth-2 {
+    width: 70px;
+    height: 2px;
+    background-color: var(--black);
+    position: relative;
+    top: 14px;
+}
+
+.vertical__teeth-1 {
+    width: 2px;
+    height: 26px;
+    background-color: var(--black);
+    position: relative;
+    left: 4px;
+    top: -4px;
+}
+
+.vertical__teeth-2 {
+    width: 2px;
+    height: 33px;
+    background-color: var(--black);
+    position: relative;
+    left: 16px;
+    top: -32px;
+}
+
+.vertical__teeth-3 {
+    width: 2px;
+    height: 33px;
+    background-color: var(--black);
+    position: relative;
+    left: 28px;
+    top: -70px;
+}
+
+.vertical__teeth-4 {
+    width: 2px;
+    height: 33px;
+    background-color: var(--black);
+    position: relative;
+    left: 40px;
+    top: -102px;
+}
+
+.vertical__teeth-5 {
+    width: 2px;
+    height: 33px;
+    background-color: var(--black);
+    position: relative;
+    left: 50px;
+    top: -132px;
+}

@@ -1,10 +1,8 @@
 import React from 'react';
 import './Footer.css';
 
-import BeerIcon from '../images/BeerIcon';
 import GithubIcon from '../images/GithubIcon';
 import LinkedinIcon from '../images/LinkedinIcon';
-
 
 function Footer() {
     return (
@@ -17,11 +15,16 @@ function Footer() {
 
                 <ul className="footer__info--nav">
                     <li>
-                        <GithubIcon className="github-icon" />
+                        <a href="https://github.com/margamb">
+                            <GithubIcon className="github-icon" />
+                        </a>
                     </li>
                     <li>
-                        <LinkedinIcon className="linkedin-icon" />
+                        <a href="https://www.linkedin.com/in/margamarben/">
+                            <LinkedinIcon className="linkedin-icon" />
+                        </a>
                     </li>
+
                 </ul>
             </div>
             <p className="footer__copyright">&copy; 3030 Planet Express. All rights reserved.</p>
