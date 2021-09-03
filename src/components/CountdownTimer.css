@@ -1,0 +1,8 @@
+.CountdownTimer {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin-inline: auto;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+}

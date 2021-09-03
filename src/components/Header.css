@@ -1,0 +1,18 @@
+.header {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin-inline: auto;
+    padding: 20px 30px 20px 30px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 70px;
+}
+
+/* @media (min-width: 480px){} */
