@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Subscribe';
+import './Subscribe.css';
 
 import companyLogo from '../images/logo.jpg';
 
@@ -13,7 +13,7 @@ function Subscribe() {
     }
 
     return (
-        <section>
+        <section className="subscribe">
             <img src={companyLogo} alt="planet express logo" style={{ width: '100px' }} />
             <h1>Subscribete</h1>
             <p>Subscribete a nuestra newsletter para tener informacion de nuestros envios y viajes interestelares.</p>
@@ -23,6 +23,7 @@ function Subscribe() {
             </form>
 
             <p>{email} ya estas subscrita a nuestra newsletter</p>
+
         </section>
     )
 }

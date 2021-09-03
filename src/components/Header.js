@@ -8,7 +8,7 @@ function Header() {
     return (
         <header className="header">
             <img className="header__logo" src={companyLogo} alt="planet express logo" />
-            <p>Y… mézclemelos todos en una jarra grande </p>
+            <h1 className="header__motto">Nuestra tripulación es remplazable, tus envios no</h1>
         </header>
     )
 }

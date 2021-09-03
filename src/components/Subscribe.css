@@ -1,0 +1,10 @@
+.subscribe {
+    background-color: red;
+    width: 100%;
+    max-width: 800px;
+    margin-inline: auto;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+}
+
+.subcribe__container {}
