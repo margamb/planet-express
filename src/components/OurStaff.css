@@ -1,0 +1,25 @@
+.clients {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+
+.clients_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clients__title {
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}

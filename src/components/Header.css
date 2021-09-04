@@ -1,6 +1,7 @@
 .header {
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
+    height: 110px;
     margin-inline: auto;
     background-color: var(--primary-600);
     display: flex;
@@ -12,16 +13,25 @@
 .header__logo {
     width: 120px;
     fill: var(--white);
+    /* nuevo */
+    margin-top: 28px;
 }
 
 .header__motto {
-    max-width: 65%;
+    /* max-width: 65%; */
+    max-width: 120%;
     align-self: center;
     color: var(--white);
     font-size: 14px;
     line-height: 1.3;
     text-align: right;
     margin-left: 20px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 @media (min-width: 800px) {

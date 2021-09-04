@@ -1,10 +1,11 @@
 .calculator {
-    background-color: var(--primary-400);
+    --calculator_background: var(--white);
+    --calculator_foreground: var(--gray-900);
+    background-color: var(--calculator_background);
     background-image: url('../images/planet-express-building.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.7;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -13,10 +14,16 @@
     align-content: center;
 }
 
+[data-color-mode='dark'] .calculator {
+    --calculator_background: var(--gray-200);
+    --calculator_foreground: var(--white);
+}
+
 .calculator__container {
     width: 80%;
     max-width: 500px;
-    background-color: var(--white);
+    background-color: var(--calculator_background);
+    color: var(--calculator_foreground);
     padding: 20px 15px 20px 15px;
     border-radius: 14px;
     box-shadow: var(--gray-700) 3px 3px 10px 0px;
@@ -28,7 +35,6 @@
 
 .calculator__container--title {
     font-size: 18px;
-    color: var(--gray-900);
     padding-bottom: 20px;
 }
 
@@ -45,7 +51,6 @@
     width: 48%;
     display: flex;
     flex-direction: column;
-    color: var(--black);
     font-size: 14px;
     font-weight: 700;
     margin: 14px 0 4px;

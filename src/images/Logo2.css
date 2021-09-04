@@ -1,0 +1,35 @@
+.logo__root {
+    --logo_background: var(--white);
+    --logo_primary: var(--primary-500);
+    --logo_secondary: var(--secondary-500);
+}
+
+[data-color-mode='dark'] .logo__root {
+    --logo_background: var(--black);
+    --logo_primary: var(--primary-400);
+    --logo_secondary: var(--secondary-400);
+}
+
+.logo__background {
+    fill: var(--logo_background);
+}
+
+.logo__circle {
+    fill: var(--logo_secondary);
+}
+
+.logo__planet {
+    fill: var(--logo_secondary);
+}
+
+.logo__express {
+    fill: var(--logo_secondary);
+}
+
+.logo__rocket_trail {
+    fill: var(--logo_primary);
+}
+
+.logo__rocket {
+    fill: var(--logo_primary);
+}

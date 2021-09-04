@@ -6,7 +6,7 @@ import Header from './components/Header';
 import SaleSection from './components/SaleSection';
 import Calculator from './components/Calculator';
 import Subscribe from './components/Subscribe';
-// import OurStaff from './components/OurStaff';
+import OurStaff from './components/OurStaff';
 import Footer from './components/Footer';
 
 
@@ -23,7 +23,7 @@ function App() {
         <SaleSection />
         <Calculator />
         <Subscribe />
-        {/* <OurStaff /> */}
+        <OurStaff />
       </main>
       <Footer />
     </div>
