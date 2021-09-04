@@ -3,7 +3,7 @@ import './App.css';
 
 
 import Header from './components/Header';
-import CountdownTimer from './components/CountdownTimer';
+import SaleSection from './components/SaleSection';
 import Calculator from './components/Calculator';
 import Subscribe from './components/Subscribe';
 // import OurStaff from './components/OurStaff';
@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <CountdownTimer />
+        <SaleSection />
         <Calculator />
         <Subscribe />
         {/* <OurStaff /> */}
