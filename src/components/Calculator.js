@@ -1,34 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Calculator.css';
+
+const PACKET_PRICE = 5
+const KG_PRICE = 1
 
 function Calculator() {
     const [price, setPrice] = useState(0);
-    const [number, setNumber] = useState('');
-    const [weight, setWeight] = useState('');
+    const [packetsQuantity, setPacketsQuantity] = useState(0);
+    const [weight, setWeight] = useState(0);
 
-    function dataOfForm(ev) {
-        ev.preventDefault();
-        setNumber(ev.target.number.value);
-        setWeight(ev.target.weight.value);
-        setPrice(number * weight)
+    useEffect(() => {
+        setPrice((packetsQuantity * PACKET_PRICE) + (weight * KG_PRICE))
+    }, [packetsQuantity, weight])
+
+    function handlePacketsChange(ev) {
+        setPacketsQuantity(parseInt(ev.target.value, 10))
     }
+
+    function handleWeightChange(ev) {
+        setWeight(parseInt(ev.target.value, 10))
+    }
+
     return (
         <section className="calculator">
             <div className="calculator__container">
                 <h1 className="calculator__container--title">Calcula el precio de tu envio</h1>
-                <form className="calculator__container--form" onSubmit={dataOfForm}>
+                <form className="calculator__container--form">
                     <label className="calculator__container--label">
                         Numero de paquetes:
-                        <input className="calculator__container--input" type="number" name="number" />
+                        <input
+                            className="calculator__container--input"
+                            type="number"
+                            name="number"
+                            min="1"
+                            value={packetsQuantity}
+                            onChange={handlePacketsChange}
+                        />
                     </label>
                     <label className="calculator__container--label">
-                        Peso:
-                        <input className="calculator__container--input" type="number" name="weight" />
+                        Peso (en kilos):
+                        <input
+                            className="calculator__container--input"
+                            type="number"
+                            name="weight"
+                            min="1"
+                            value={weight}
+                            onChange={handleWeightChange}
+                        />
                     </label>
-                    {/* <input type="submit" value="Submit" /> */}
                 </form>
                 <div className="calculator__container--price">
-                    {/* <p className="calculator__container--price--text">El precio es:</p> */}
                     <p className="calculator__container--price--euro">{price} €</p>
                 </div>
 
