@@ -1,25 +1,26 @@
-.SaleSection {
-    background-color: var(--gray-200);
+.salesection {
+    background-color: var(--secondary-400);
     width: 100%;
-    padding: 40px;
-    text-align: center;
+    padding: 20px;
+    text-align: right;
 }
 
-.SaleSection__title {
+.salesection__title {
     text-transform: capitalize;
     margin-bottom: 5px;
     font-weight: 700;
-    font-size: 26px;
-    color: var(--gray-900);
+    font-size: 24px;
+    color: var(--white);
 }
 
-.SaleSection__subtitle {
+.salesection__subtitle {
     margin-bottom: 10px;
-    font-size: 16px;
-    color: var(--gray-900);
+    font-size: 18px;
+    color: var(--secondary-500);
 }
 
-.SaleSection__timer {
-    font-size: 26px;
-    color: var(--black);
+.salesection__timer {
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--white);
 }

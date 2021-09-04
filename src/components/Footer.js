@@ -10,16 +10,8 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer__info">
-                <div className="footer__info--container">
-                    <div className="footer__info--container-logo">
-                        <Logo className="footer__logo" />
-                        <p className="footer__info--title">Planet express</p>
-                    </div>
-                    <p className="footer__info--text">Planet Express es una empresa dedicada al envio interestelar</p>
-
-
-                </div>
-
+                <Logo className="footer__logo" />
+                <p className="footer__info--text">Planet Express es una empresa dedicada al envio interestelar</p>
                 <ul className="footer__info--nav">
                     <li>
                         <a href="https://github.com/margamb">
@@ -34,7 +26,7 @@ function Footer() {
 
                 </ul>
             </div>
-            <p className="footer__copyright">&copy; 3030 Planet Express. All rights reserved.</p>
+            <p className="footer__copyright"><strong>&copy; 3000 </strong> Planet Express. All rights reserved.</p>
 
 
         </footer>

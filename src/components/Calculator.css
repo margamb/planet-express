@@ -1,6 +1,6 @@
 .calculator {
     background-color: var(--primary-400);
-    background-image: url('../images/space.jpg');
+    background-image: url('../images/planet-express-building.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,8 +18,8 @@
     max-width: 500px;
     background-color: var(--white);
     padding: 20px 15px 20px 15px;
-    border-radius: 10px;
-    box-shadow: var(--gray-50) 3px 3px 10px 0px;
+    border-radius: 14px;
+    box-shadow: var(--gray-700) 3px 3px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,8 +27,7 @@
 }
 
 .calculator__container--title {
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     color: var(--gray-900);
     padding-bottom: 20px;
 }
@@ -39,7 +38,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 20px;
-    /* background-color: aqua; */
+    align-items: end;
 }
 
 .calculator__container--label {
@@ -60,7 +59,7 @@
     line-height: 24px;
     height: 40px;
     padding: 10px 16px;
-    color: var(--gray-900);
+    color: var(--black);
     background-color: var(--gray-50);
     border-radius: 8px;
     border: none;
@@ -71,7 +70,6 @@
 }
 
 .calculator__container--price {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
 }
@@ -79,5 +77,5 @@
 .calculator__container--price--euro {
     color: var(--secondary-400);
     font-weight: 700;
-    font-size: 40px;
+    font-size: 24px;
 }
