@@ -10,19 +10,29 @@
 }
 
 .subscribe__title {
+    --subscribe_color: var(--gray-900);
     font-weight: 700;
-    color: var(--gray-900);
+    color: var(--subscribe_color);
     margin-bottom: 10px;
     font-size: 18px;
 }
 
+[data-color-mode='dark'] .subscribe__title {
+    --subscribe_color: var(--white);
+}
+
 .subscribe__text {
+    --subscribe_color: var(--gray-900);
     max-width: 500px;
     margin-inline: auto;
     margin-bottom: 10px;
     font-size: 14px;
-    color: var(--gray-900);
+    color: var(--subscribe_color);
     line-height: 1.3;
+}
+
+[data-color-mode='dark'] .subscribe__text {
+    --subscribe_color: var(--white);
 }
 
 .subscribe__form {

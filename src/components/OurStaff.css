@@ -1,5 +1,6 @@
 .clients {
     width: 100%;
+    padding: 20px;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,5 +22,6 @@
     color: var(--gray-900);
     margin-bottom: 10px;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
+    margin-left: 30px;
 }
