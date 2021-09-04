@@ -22,15 +22,12 @@
     box-sizing: border-box;
 }
 
-body {
-    --background: var(--white);
-}
-
 [data-color-mode='dark'] {
     --background: var(--gray-200);
 }
 
 body {
+    --background: var(--white);
     background-color: var(--background);
     font-family: sans-serif;
 }

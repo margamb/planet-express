@@ -10,7 +10,7 @@ function Header() {
             <Logo2 className="header__logo" />
             <div className="header__container">
                 <Checkbox />
-                <h1 className="header__motto">Nuestra tripulación es remplazable, tus envios no</h1>
+                <h1 className="header__container--motto">Nuestra tripulación es remplazable, tus envios no</h1>
             </div>
 
         </header>

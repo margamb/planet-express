@@ -1,11 +1,6 @@
 .clients {
     width: 100%;
     padding: 20px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; */
 }
 
 .clients_container {
@@ -18,10 +13,15 @@
 }
 
 .clients__title {
+    --clients-color: var(--gray-900);
     font-weight: 700;
-    color: var(--gray-900);
+    color: var(--clients_color);
     margin-bottom: 10px;
     font-size: 18px;
     text-align: left;
     margin-left: 30px;
+}
+
+[data-color-mode='dark'] .clients__title {
+    --clients_color: var(--white);
 }
