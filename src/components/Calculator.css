@@ -65,16 +65,11 @@
     border: none;
     box-sizing: border-box;
     outline: none;
-    appearance: none;
+    /* appearance: none; */
     margin-top: 5px;
 }
 
 .calculator__container--price {
-    display: flex;
-    flex-direction: column;
-}
-
-.calculator__container--price--euro {
     color: var(--secondary-400);
     font-weight: 700;
     font-size: 24px;

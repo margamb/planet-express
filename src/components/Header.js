@@ -3,7 +3,6 @@ import './Header.css';
 
 import Logo from '../images/Logo'
 
-
 function Header() {
     return (
         <header className="header">

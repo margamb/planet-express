@@ -49,10 +49,7 @@ function Calculator() {
                         />
                     </label>
                 </form>
-                <div className="calculator__container--price">
-                    <p className="calculator__container--price--euro">{price} €</p>
-                </div>
-
+                <p className="calculator__container--price">{price} €</p>
             </div>
 
         </section>

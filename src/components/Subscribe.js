@@ -16,7 +16,6 @@ function Subscribe() {
     return (
         <section className="subscribe">
             <Bender />
-            {/* <img className="subscribe__img" src={companyLogo} alt="planet express logo" /> */}
             <h1 className="subscribe__title">Subscribete</h1>
             <p className="subscribe__text">Subscribete a nuestra newsletter para tener informacion de nuestros envios y viajes interestelares.</p>
             <form className="subscribe__form" onSubmit={emailAddress}>
@@ -25,9 +24,9 @@ function Subscribe() {
             </form>
 
             {showNotification && (
-                <div className="subscribe__exit">
-                    <p className="subscribe__exit--text">{email} ha sido subscrita a nuestra newsletter</p>
-                    <span className="subscribe__exit--close" onClick={() => setShowNotification(false)} />
+                <div className="subscribe__notification">
+                    <p className="subscribe__notification--text">{email} ha sido subscrita a nuestra newsletter</p>
+                    <span className="subscribe__notification--close" onClick={() => setShowNotification(false)} />
                 </div>
             )}
         </section>

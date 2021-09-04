@@ -13,12 +13,6 @@
     justify-content: space-between;
     color: var(--gray-900);
     margin-inline: auto;
-    /* background-color: red; */
-}
-
-.footer__info--container {
-    width: 100%;
-    background-color: yellow;
 }
 
 .footer__logo {
@@ -62,10 +56,6 @@
 }
 
 @media (min-width: 900px) {
-    .footer__copyright {
-        flex-direction: row;
-        justify-content: space-between;
-    }
     .footer__info {
         flex-direction: row;
         align-items: end;
@@ -76,5 +66,9 @@
     .footer__info--nav {
         width: 30%;
         justify-content: flex-end;
+    }
+    .footer__copyright {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
