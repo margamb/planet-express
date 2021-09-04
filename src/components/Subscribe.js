@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import './Subscribe.css';
 
-import companyLogo from '../images/bender_newsletter.jpg';
 import Bender from './Bender'
 
 function Subscribe() {
     const [email, setEmail] = useState('');
+    const [showNotification, setShowNotification] = useState(false)
 
     function emailAddress(ev) {
         ev.preventDefault();
         setEmail(ev.target.email.value);
+        setShowNotification(true)
     }
 
     return (
@@ -23,11 +24,12 @@ function Subscribe() {
                 <input className="subscribe__form--submit" type="submit" value="Submit" />
             </form>
 
-            <div className="subscribe__exit">
-                <p className="subscribe__exit--text">{email} ha sido subscrita a nuestra newsletter</p>
-                <p className="subscribe__exit--close">x</p>
-            </div>
-
+            {showNotification && (
+                <div className="subscribe__exit">
+                    <p className="subscribe__exit--text">{email} ha sido subscrita a nuestra newsletter</p>
+                    <span className="subscribe__exit--close" onClick={() => setShowNotification(false)} />
+                </div>
+            )}
         </section>
     )
 }
