@@ -1,6 +1,5 @@
 .client {
-    margin: 5px;
-    padding: 10px;
+    margin: 10px;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -11,15 +10,18 @@
     width: 80px;
     height: 80px;
     border-radius: 100px;
-    margin-right: 10px;
-    object-fit: contain;
+    margin-right: 20px;
+    object-fit: cover;
     background-color: var(--white);
+    flex-shrink: 0;
 }
 
 .client__info {
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: center;
+    width: 100%;
 }
 
 .client__name {
@@ -47,36 +49,23 @@
 
 @media (min-width: 550px) {
     .client {
+        margin: 10px;
         width: 40%;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding: 10px;
     }
     .client__img {
-        padding-bottom: 20px;
         border: 5px solid var(--gray-50);
         width: 100px;
         height: 100px;
         z-index: 1;
     }
     .client__info {
-        align-items: center;
-        margin-top: -30px;
+        margin-top: 10px;
     }
     .client__quotes {
         width: 80%;
-    }
-    .client__circle {
-        position: relative;
-        width: 50px;
-        height: 50px;
-        background-color: var(--gray-50);
-        box-shadow: var(--white) 3px 3px 10px 0px;
-        border-radius: 100%;
-        top: -102px;
-        left: 27px;
-        z-index: 0;
     }
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Testimonials.css';
 
@@ -21,24 +21,33 @@ async function fetchCharacters() {
 }
 
 function Testimonials({ numOfCharacters = 6 }) {
-
+    const [testimonials, setTestimonials] = useState([])
 
     useEffect(() => {
         async function getCharacters() {
             const characters = await fetchCharacters()
             const charactersToDisplay = characters.slice(0, numOfCharacters)
-            console.log(charactersToDisplay)
-            return charactersToDisplay
+            setTestimonials(charactersToDisplay);
+            console.log(testimonials)
         }
+
         getCharacters()
-    })
+    }, [])
+
+    function renderTestimonials() {
+        return testimonials.map((client) => {
+            return (
+                <li className="client" key={client.id}>
+                    <Client client={client} />
+                </li>
+            )
+        })
+    }
 
     return (
         <section className="clients">
             <h1 className="clients__title">Our clients</h1>
-            <div className="clients_container">
-                <Client />
-            </div>
+            <ul className="clients_container">{renderTestimonials()}</ul>
 
         </section>
     )

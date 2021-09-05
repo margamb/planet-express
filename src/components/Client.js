@@ -1,65 +1,19 @@
 import React from 'react';
 import './Client.css';
 
-import client from '../images/client.jpg'
-
-
-function Client() {
+function Client({ client }) {
     return (
         <>
-            <div className="client">
-                <img
-                    className="client__img"
-                    src={client}
-                    alt="imagen de cliente"
-                />
-                <div className="client__circle"></div>
-                <div className="client__info">
-                    <p className="client__name">Bender</p>
-                    <p className="client__quotes ">Dying sucks butt. How do you living being cope with morality??</p>
-                </div>
+            <img
+                className="client__img"
+                src={client.PicUrl}
+                alt="imagen de cliente"
+            />
+            <div className="client__info">
+                <p className="client__name">{client.Name}</p>
+                <p className="client__quotes ">{client.FirstAppearance}</p>
             </div>
 
-
-
-            <div className="client">
-                <img
-                    className="client__img"
-                    src={client}
-                    alt="imagen de cliente"
-                />
-                <div className="client__circle"></div>
-                <div className="client__info">
-                    <p className="client__name">Bender</p>
-                    <p className="client__quotes ">Dying sucks butt. How do you living being cope with morality??</p>
-                </div>
-            </div>
-
-            <div className="client">
-                <img
-                    className="client__img"
-                    src={client}
-                    alt="imagen de cliente"
-                />
-                <div className="client__circle"></div>
-                <div className="client__info">
-                    <p className="client__name">Bender</p>
-                    <p className="client__quotes ">Dying sucks butt. How do you living being cope with morality??</p>
-                </div>
-            </div>
-
-            <div className="client">
-                <img
-                    className="client__img"
-                    src={client}
-                    alt="imagen de cliente"
-                />
-                <div className="client__circle"></div>
-                <div className="client__info">
-                    <p className="client__name">Bender</p>
-                    <p className="client__quotes ">Dying sucks butt. How do you living being cope with morality??</p>
-                </div>
-            </div>
         </>
     )
 }
