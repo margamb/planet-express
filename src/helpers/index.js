@@ -17,5 +17,10 @@ export function millisecondsToHumanTime(ms) {
 
   const seconds = Math.floor(remaining_seconds / MILLISECONDS_IN_A_SECOND);
 
-  return `${days} días, ${hours} horas, ${minutes} minutos y ${seconds} segundos`;
+  const daysString = days === 1 ? 'día' : 'días';
+  const hoursString = hours === 1 ? 'hora' : 'horas';
+  const minutesString = minutes === 1 ? 'minuto' : 'minutos';
+  const secondsString = seconds === 1 ? 'segundo' : 'segundos';
+
+  return `${days} ${daysString}, ${hours} ${hoursString}, ${minutes} ${minutesString} y ${seconds} ${secondsString}`;
 }

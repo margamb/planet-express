@@ -28,6 +28,8 @@ Este proyecto esta creado con **React**. El diseño de la landing ha sido hecho 
 
 [x] Footer
 
+[x] Tests: He añadido un test para la función que convierte un tiempo en milisegundos en un tiempo "humano"
+
 ### Si hubiera tenido mas tiempo... ;)
 
 [] Me hubiera gustado hacer algunas illustraciones para alguno de los componentes.
