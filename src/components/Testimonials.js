@@ -22,12 +22,12 @@ function Testimonials({ numOfCharacters = 6 }) {
             }
         }
         getCharacters()
-    }, [])
+    }, [numOfCharacters])
 
     function renderTestimonials() {
         return testimonials.map((client) => {
             return (
-                <li className="client" key={client.id}>
+                <li className="client" key={client.Name}>
                     <Client client={client} />
                 </li>
             )

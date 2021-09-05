@@ -44,7 +44,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 20px;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .calculator__container--label {

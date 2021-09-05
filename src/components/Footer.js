@@ -3,7 +3,7 @@ import './Footer.css';
 
 import GithubIcon from '../images/GithubIcon';
 import LinkedinIcon from '../images/LinkedinIcon';
-import Logo from '../images/Logo';
+import Logo from './Logo';
 
 function Footer() {
     return (
