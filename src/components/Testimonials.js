@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './Testimonials.css';
 
 import Client from './Client';
+import Loading from './Loading';
 
 // La API no permite hacer request para un personaje especifico,
 // habria que hacer varias busquedas, una para cada empleado,
@@ -22,15 +23,18 @@ async function fetchCharacters() {
 
 function Testimonials({ numOfCharacters = 6 }) {
     const [testimonials, setTestimonials] = useState([])
+    const [status, setStatus] = useState('');
 
     useEffect(() => {
         async function getCharacters() {
             const characters = await fetchCharacters()
             const charactersToDisplay = characters.slice(0, numOfCharacters)
             setTestimonials(charactersToDisplay);
-            console.log(testimonials)
-        }
 
+            if (charactersToDisplay.length <= 0) {
+                setStatus('loading');
+            }
+        }
         getCharacters()
     }, [])
 
@@ -42,6 +46,11 @@ function Testimonials({ numOfCharacters = 6 }) {
                 </li>
             )
         })
+    }
+
+    if (status === 'loading') {
+        return <Loading text="loading testimonials" />;
+        // return <p>loading...</p>;
     }
 
     return (

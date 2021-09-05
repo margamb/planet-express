@@ -1,0 +1,245 @@
+.loading__testimonial_text {
+    --loading_color: var(--gray-900);
+    text-align: center;
+    font-weight: 700;
+    color: var(--loading_color);
+    font-size: 18px;
+    animation: loading 2s infinite;
+    opacity: 1;
+    margin-left: -30px;
+}
+
+@keyframes loading {
+    30% {
+        opacity: 0.3;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+[data-color-mode='dark'] .loading__testimonial_text {
+    --loading_color: var(--white);
+}
+
+.loading__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading__bender__container {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: var(--white);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transform: scale(0.5);
+}
+
+.loading__antena__ball {
+    width: 12px;
+    height: 12px;
+    background-color: var(--gray-400);
+    border-radius: 100px;
+    position: relative;
+    top: -19px;
+    left: 71px;
+}
+
+.loading__antena__ball-1 {
+    width: 27px;
+    height: 27px;
+    background-color: var(--gray-400);
+    border-radius: 100px;
+    position: relative;
+    top: -37px;
+    left: 63px;
+}
+
+.loading__antena__stick {
+    width: 8px;
+    height: 30px;
+    background-color: var(--gray-400);
+    position: relative;
+    top: -21px;
+    left: 73px;
+}
+
+.loading__bender__face {
+    width: 70px;
+    height: 120px;
+    border-radius: 38px 38px 0px 0px;
+    background-color: var(--gray-400);
+    position: relative;
+    left: 42px;
+    top: -55px;
+}
+
+.loading__bender__light {
+    width: 50px;
+    height: 120px;
+    border-radius: 38px 38px 0px 0px;
+    background-color: var(--gray-200);
+    position: relative;
+    left: 10px;
+}
+
+.loading__bender__light--second {
+    width: 6px;
+    height: 50px;
+    border-radius: 38px 38px 0px 0px;
+    background-color: var(--white);
+    position: relative;
+    left: 3px;
+    opacity: 0.3;
+    top: 22px;
+}
+
+.loading__bender__eyes--container {
+    width: 100px;
+    height: 35px;
+    background-color: var(--gray-400);
+    position: relative;
+    top: -75px;
+    left: -15px;
+    border-radius: 20px;
+}
+
+.loading__bender__eyes--container-black {
+    width: 90px;
+    height: 29px;
+    background-color: var(--black);
+    border-radius: 20px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    overflow: hidden;
+}
+
+.loading__eyes__left {
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    top: 2px;
+    left: 13px;
+}
+
+.loading__eyes__right {
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    top: -29px;
+    left: 48px;
+}
+
+.loading__eyes__pupil {
+    width: 7px;
+    height: 7px;
+    background-color: var(--black);
+    border-radius: 100px;
+    top: 11px;
+    left: 11px;
+    position: relative;
+    animation: eyes 2s infinite;
+}
+
+@keyframes eyes {
+    50% {
+        top: 6px;
+    }
+}
+
+.loading__mouth {
+    width: 55px;
+    height: 25px;
+    background-color: var(--white);
+    position: relative;
+    top: -68px;
+    left: 7px;
+    border-radius: 13px;
+    overflow: hidden;
+    border: 2px solid var(--black);
+}
+
+.loading__lips {
+    width: 55px;
+    height: 25px;
+    background-color: var(--gray-400);
+    position: relative;
+    top: -180px;
+    left: 0px;
+    animation: lips 2s infinite;
+}
+
+@keyframes lips {
+    50% {
+        top: -187px;
+    }
+}
+
+.loading__horizontal__teeth-1 {
+    width: 70px;
+    height: 2px;
+    background-color: var(--black);
+    position: relative;
+    top: 7px;
+}
+
+.loading__horizontal__teeth-2 {
+    width: 70px;
+    height: 2px;
+    background-color: var(--black);
+    position: relative;
+    top: 14px;
+}
+
+.loading__vertical__teeth-1 {
+    width: 2px;
+    height: 26px;
+    background-color: var(--black);
+    position: relative;
+    left: 4px;
+    top: -4px;
+}
+
+.loading__vertical__teeth-2 {
+    width: 2px;
+    height: 33px;
+    background-color: var(--black);
+    position: relative;
+    left: 16px;
+    top: -32px;
+}
+
+.loading__vertical__teeth-3 {
+    width: 2px;
+    height: 33px;
+    background-color: var(--black);
+    position: relative;
+    left: 28px;
+    top: -70px;
+}
+
+.loading__vertical__teeth-4 {
+    width: 2px;
+    height: 33px;
+    background-color: var(--black);
+    position: relative;
+    left: 40px;
+    top: -102px;
+}
+
+.loading__vertical__teeth-5 {
+    width: 2px;
+    height: 33px;
+    background-color: var(--black);
+    position: relative;
+    left: 50px;
+    top: -132px;
+}
