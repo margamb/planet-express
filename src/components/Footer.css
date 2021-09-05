@@ -55,7 +55,7 @@
     text-align: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
     .footer__info {
         flex-direction: row;
         align-items: end;

@@ -50,7 +50,6 @@ function Testimonials({ numOfCharacters = 6 }) {
 
     if (status === 'loading') {
         return <Loading text="loading testimonials" />;
-        // return <p>loading...</p>;
     }
 
     return (
