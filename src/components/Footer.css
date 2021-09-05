@@ -57,8 +57,9 @@
 
 @media (min-width: 800px) {
     .footer__info {
+        max-width: 900px;
         flex-direction: row;
-        align-items: end;
+        align-items: center;
     }
     .footer__info--text {
         margin-left: -90px;
