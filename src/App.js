@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { NUM_OF_TESTIMONIALS } from './config';
 import './App.css';
 
 import Header from './components/Header';
@@ -16,7 +18,7 @@ function App() {
         <SaleSection />
         <Calculator />
         <Subscribe />
-        <Testimonials numOfCharacters={8} />
+        <Testimonials numOfCharacters={NUM_OF_TESTIMONIALS} />
       </main>
       <Footer />
     </div>

@@ -1,3 +1,5 @@
+// Acepta un numero de milisegundos y nos lo "traduce"
+// a dias, horas, minutos y segundos
 export function millisecondsToHumanTime(ms) {
     const MILLISECONDS_IN_A_SECOND = 1000
     const MILLISECONDS_IN_A_MINUTE = MILLISECONDS_IN_A_SECOND * 60

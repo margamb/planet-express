@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { PACKET_PRICE, KG_PRICE } from '../config';
 import './Calculator.css';
-
-const PACKET_PRICE = 5
-const KG_PRICE = 1
 
 function Calculator() {
     const [price, setPrice] = useState(0);
@@ -51,7 +49,6 @@ function Calculator() {
                 </form>
                 <p className="calculator__container--price">{price} €</p>
             </div>
-
         </section>
     )
 }

@@ -7,12 +7,10 @@ function switchTheme(mode) {
 
 function Checkbox() {
     function handleChange(e) {
-        console.log(e.target.checked)
         if (e.target.checked) {
-            console.log("tema oscuro")
             switchTheme("dark")
         } else {
-            switchTheme("")
+            switchTheme("light")
         }
     }
 

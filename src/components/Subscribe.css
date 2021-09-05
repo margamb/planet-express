@@ -56,7 +56,7 @@
     border: none;
     box-sizing: border-box;
     outline: none;
-    /* -webkit-appearance: none; */
+    -webkit-appearance: none;
     appearance: none;
 }
 
@@ -67,7 +67,7 @@
     background-color: var(--secondary-400);
     color: var(--white);
     border-radius: 8px;
-    /* appearance: none; */
+    appearance: none;
     position: relative;
     outline: none;
     font-size: 16px;

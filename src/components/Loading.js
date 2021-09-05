@@ -1,5 +1,8 @@
 import './Loading.css'
 
+// Renderiza la cara de Bender con una animacion
+// Y el texto que le pasemos para indicar que esta
+// cargando
 function Loading({ text }) {
     return (
         <div className="loading__container">

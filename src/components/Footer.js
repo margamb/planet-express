@@ -5,7 +5,6 @@ import GithubIcon from '../images/GithubIcon';
 import LinkedinIcon from '../images/LinkedinIcon';
 import Logo from '../images/Logo';
 
-
 function Footer() {
     return (
         <footer className="footer">

@@ -1,5 +1,6 @@
 import './Bender.css'
 
+// La ilustracion de Bender creada con CSS
 function Bender() {
     return (
         <div className="bender__container">
@@ -40,7 +41,3 @@ function Bender() {
 }
 
 export default Bender;
-
-{/* 
-            
-            */}
