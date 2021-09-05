@@ -4,14 +4,14 @@
 // habria que cambiar este archivo
 
 // El precio por paquete en (euros)
-export const PACKET_PRICE = 5
+export const PACKET_PRICE = 5;
 
 // El precio extra por kilo (en euros)
-export const KG_PRICE = 1
+export const KG_PRICE = 1;
 
 // Cuando caduca la oferta
-export const SALE_DEADLINE = '09/25/2021'
+export const SALE_DEADLINE = '09/25/2021';
 
-// Cuantos testimonios de clientes mostrar en la 
+// Cuantos testimonios de clientes mostrar en la
 // seccion "Our Clients" (maximo de 20)
-export const NUM_OF_TESTIMONIALS = 8
+export const NUM_OF_TESTIMONIALS = 8;

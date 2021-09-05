@@ -3,9 +3,10 @@
 Este proyecto esta creado con **React**. El diseño de la landing ha sido hecho directamente en css. Solo he dibujado un pequeno wireframe para tener claro las partes que queria hacer.
 
 ### Partes del proyecto requeridas.
+
 [x] Countdown: Una cuenta atrás para que termine una oferta determinada.
 
-[x] Subscribe: Apartado para subscribirse a una newsletter.
+[x] Subscribe: Apartado para subscribirse a una newsletter. Una vez subscrita aparece una notificación con la dirección de email introducida.
 
 [x] Calculator: Una calculadora que calcule el precio del envio multiplicando los paquetes por el precio. He añadido que por cada paquete se pague 5€ mas y por cada quilo 1€ mas.
 
@@ -17,11 +18,11 @@ Este proyecto esta creado con **React**. El diseño de la landing ha sido hecho 
 
 [x] Header
 
-[x] Checkbox: Con esta checkbox puedes activar o desactivar el tema oscuro de la landing. 
+[x] Checkbox: Con esta checkbox puedes activar o desactivar el tema oscuro de la landing.
 
 [x] Logo: Un logo en svg donde se pueden manipular los colores tanto por si se quiere utilizar otra paleta de color o para cambiar al tema oscuro.
 
-[x] Bender: Es una illustración del personaje de Bender hecha con CSS. LLeva una animación donde se mueven los ojos y la boca. 
+[x] Bender: Es una illustración del personaje de Bender hecha con CSS. LLeva una animación donde se mueven los ojos y la boca.
 
 [x] Loading: He creado un Loading para que aparezca en el caso de que los datos no lleguen.
 
@@ -34,7 +35,6 @@ Este proyecto esta creado con **React**. El diseño de la landing ha sido hecho 
 [] Investigar mas para aportar mas en la parte del diseño
 
 [] Me gusta limpiar el código mientras lo voy haciendo, pero me hubiera gustado tener más tiempo para refactorizar.
-
 
 # Ejecutando el proyecto
 
