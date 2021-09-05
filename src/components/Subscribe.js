@@ -5,6 +5,7 @@ import Bender from './Bender';
 
 function Subscribe() {
   const [email, setEmail] = useState('');
+  const [emailPosition, setEmailPosition] = useState(0);
   const [showNotification, setShowNotification] = useState(false);
 
   function emailAddress(ev) {
@@ -13,9 +14,14 @@ function Subscribe() {
     setShowNotification(true);
   }
 
+  function handleEmailInput(ev) {
+    setEmailPosition(ev.target.value.length);
+    console.log(emailPosition);
+  }
+
   return (
     <section className="subscribe">
-      <Bender />
+      <Bender lookAt={emailPosition} />
       <h1 className="subscribe__title">Subscribete</h1>
       <p className="subscribe__text">
         Subscribete a nuestra newsletter para tener informacion de nuestros
@@ -27,6 +33,7 @@ function Subscribe() {
           type="email"
           name="email"
           placeholder="Your Email"
+          onChange={handleEmailInput}
         />
         <input
           className="subscribe__form--submit"

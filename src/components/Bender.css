@@ -113,9 +113,8 @@
     background-color: var(--black);
     border-radius: 100px;
     top: 11px;
-    left: 11px;
     position: relative;
-    animation: eyes 2s infinite;
+    /* animation: eyes 2s infinite; */
 }
 
 @keyframes eyes {

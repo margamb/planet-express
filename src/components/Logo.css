@@ -6,7 +6,7 @@
 
 [data-color-mode='dark'] .logo__root {
     --logo_background: var(--black);
-    --logo_primary: var(--primary-400);
+    --logo_primary: var(--primary-500);
     --logo_secondary: var(--secondary-400);
 }
 

@@ -22,7 +22,7 @@ Este proyecto esta creado con **React**. El diseño de la landing ha sido hecho 
 
 [x] Logo: Un logo en svg donde se pueden manipular los colores tanto por si se quiere utilizar otra paleta de color o para cambiar al tema oscuro.
 
-[x] Bender: Es una illustración del personaje de Bender hecha con CSS. LLeva una animación donde se mueven los ojos y la boca.
+[x] Bender: Es una illustración del personaje de Bender hecha con CSS. LLeva una animación donde se mueve la boca y los ojos se mueven dependiendo de la lenght del email.
 
 [x] Loading: He creado un Loading para que aparezca en el caso de que los datos no lleguen.
 
