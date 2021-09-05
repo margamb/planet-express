@@ -23,11 +23,11 @@ function Calculator() {
     <section className="calculator">
       <div className="calculator__container">
         <h1 className="calculator__container--title">
-          Calcula el precio de tu envio
+          Calcula el precio de tu envío
         </h1>
         <form className="calculator__container--form">
           <label className="calculator__container--label">
-            Numero de paquetes:
+            Número de paquetes:
             <input
               className="calculator__container--input"
               type="number"

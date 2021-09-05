@@ -22,30 +22,30 @@ function Subscribe() {
   return (
     <section className="subscribe">
       <Bender lookAt={emailPosition} />
-      <h1 className="subscribe__title">Subscribete</h1>
+      <h1 className="subscribe__title">Suscríbete</h1>
       <p className="subscribe__text">
-        Subscribete a nuestra newsletter para tener informacion de nuestros
-        envios y viajes interestelares.
+        Suscríbete a nuestra newsletter para tener informacion de nuestros
+        envíos y viajes interestelares.
       </p>
       <form className="subscribe__form" onSubmit={emailAddress}>
         <input
           className="subscribe__form--input"
           type="email"
           name="email"
-          placeholder="Your Email"
+          placeholder="Tu Email"
           onChange={handleEmailInput}
         />
         <input
           className="subscribe__form--submit"
           type="submit"
-          value="Submit"
+          value="Enviar"
         />
       </form>
 
       {showNotification && (
         <div className="subscribe__notification">
           <p className="subscribe__notification--text">
-            {email} ha sido subscrita a nuestra newsletter
+            {email} ha sido suscrita a nuestra newsletter
           </p>
           <span
             className="subscribe__notification--close"

@@ -11,7 +11,7 @@ function Header() {
       <div className="header__container">
         <Checkbox />
         <h1 className="header__container--motto">
-          Nuestra tripulación es remplazable, tus envios no
+          Nuestra tripulación es remplazable, tus envíos no
         </h1>
       </div>
     </header>

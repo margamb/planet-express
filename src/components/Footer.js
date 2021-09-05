@@ -11,7 +11,7 @@ function Footer() {
       <div className="footer__info">
         <Logo className="footer__logo" />
         <p className="footer__info--text">
-          Planet Express es una empresa dedicada al envio interestelar
+          Planet Express es una empresa dedicada al envío interestelar
         </p>
         <ul className="footer__info--nav">
           <li>

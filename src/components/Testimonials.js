@@ -39,7 +39,7 @@ function Testimonials({ numOfCharacters = 6 }) {
 
   return (
     <section className="clients">
-      <h1 className="clients__title">Our clients</h1>
+      <h1 className="clients__title">Nuestros clientes</h1>
       <ul className="clients_container">{renderTestimonials()}</ul>
     </section>
   );
